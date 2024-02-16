@@ -2589,6 +2589,9 @@ readers do not read off random characters that represent icons */
 .fa-microphone-slash:before {
   content: "\f131"; }
 
+.fa-magnifying-glass-chart:before{
+  content :"\e522";}
+
 .fa-microscope:before {
   content: "\f610"; }
 

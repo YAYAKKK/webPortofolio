@@ -630,7 +630,7 @@ input[type='checkbox'] {
 }
 
 .split p {
-	margin-bottom: 2.25rem;
+	margin-bottom: 1.5rem;
 }
 
 .split .icons-container {
@@ -638,9 +638,9 @@ input[type='checkbox'] {
 }
 
 .split .icons-container img {
-	width: 50px;
+	width: 40px;
 	margin-right: 0.625rem;
-	margin-bottom: 0.75rem;
+	
 }
 
 
