@@ -286,7 +286,6 @@ a:hover {
 	font-size: 0.875rem;
 	line-height: 1.875rem;
 	transition: all 0.2s;
-	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
 }
 
 .form-control-select {
@@ -513,16 +512,32 @@ input[type='checkbox'] {
 	border: none;
 	font-size: 1.25rem;
 }
-
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 20px;
+}
+.gallery-item {
+	width: 300px;
+	text-align: center;
+}
+.gallery-item img {
+	max-width: 100%;
+	height: auto;
+}
 
 /******************/
 /*     Header     */
 /******************/
 .header {
+	padding-left: 20px;
 	padding-top: 7rem;
 	padding-bottom: 5.5rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/header-background.jpg') center center no-repeat;
-	background-size: cover;
+	background:linear-gradient(rgba(3, 3, 3, 0.208), rgba(255, 255, 255, 0)), url('../images/header-background.png') center center no-repeat;
+	background-size:cover;
+	background-position-x: right;
 	text-align: center;
 }
 
@@ -620,7 +635,7 @@ input[type='checkbox'] {
 /*******************/
 .split .area-1 {
 	height: 430px;
-	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/details-background.jpg') center center no-repeat;
+	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/choose.jpg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -634,11 +649,11 @@ input[type='checkbox'] {
 }
 
 .split .icons-container {
-	margin-top: 3rem;
+	margin-top: 1rem;
 }
 
 .split .icons-container img {
-	width: 40px;
+	width: 30px;
 	margin-right: 0.625rem;
 	
 }
@@ -648,11 +663,12 @@ input[type='checkbox'] {
 /*     Projects     */
 /********************/
 .basic-3 {
-	padding-top: 7.75rem;
+	padding-top: 3.75rem;
 	padding-bottom: 1rem;
 }
 
 .basic-3 .h2-heading {
+	margin-top: 0rem;
 	margin-bottom: 0.75rem;
 	text-align: center;
 }
@@ -694,15 +710,21 @@ input[type='checkbox'] {
 /*     Works     */
 /*****************/
 .basic-4 {
+	padding-top: 5rem;
 	padding-bottom: 1rem;
 }
 
 .basic-4 .text-container {
 	margin-bottom: 4rem;
+	text-align: justify;
 }
 
 .basic-4 .image-container {
 	margin-bottom: 1rem;
+}
+.basic-4 .row {
+    display: flex;
+    justify-content: center;
 }
 
 /* Hover Animation */
@@ -854,12 +876,17 @@ input[type='checkbox'] {
 /*     Footer     */
 /******************/
 .footer {
-	padding-top: 6.25rem;
-	padding-bottom: 2rem;
-	background-color: #24262a;
-	text-align: center;
+	height: 20px;
+    width: 100%; /* Mengatur lebar footer menjadi 100% */
+    padding-left: 15px; /* Menambahkan padding kiri */
+    padding-right: 15px; /* Menambahkan padding kanan */
+	margin-top: 75px;
+    padding-top: 6.25rem;
+    padding-bottom: 2rem;
+    background-color: #24262a;
+    text-align: center;
+	display: flex;
 }
-
 .footer a {
 	text-decoration: none;
 }
@@ -962,6 +989,7 @@ a:hover.back-to-top {
 .ex-cards-1 .card {
 	border: none;
 	background-color: transparent;
+	margin-bottom: 0px;
 }
 
 .ex-cards-1 .card .fa-stack {
@@ -997,7 +1025,7 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
-		padding-top: 11rem;
+		padding-top:11rem;
 		padding-bottom: 9rem;
 	}
 	/* end of header */
@@ -1131,6 +1159,7 @@ a:hover.back-to-top {
 	.split .text-container {
 		width: 400px;
 		margin-left: 3rem;
+		text-align: justify;
 	}
 	/* end of details */
 
@@ -1229,6 +1258,7 @@ a:hover.back-to-top {
 	/* About */
 	.basic-1 .text-container.first {
 		margin-right: 2rem;
+		
 	}
 
 	.basic-1 .text-container.second {
