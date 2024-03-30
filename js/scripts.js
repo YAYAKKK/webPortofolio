@@ -1,32 +1,29 @@
-/* Description: Custom JS file */
-
-
 (function($) {
     "use strict"; 
-	
+
     /* Navbar Scripts */
     // jQuery to collapse the navbar on scroll
     $(window).on('scroll load', function() {
-		if ($(".navbar").offset().top > 60) {
-			$(".fixed-top").addClass("top-nav-collapse");
-		} else {
-			$(".fixed-top").removeClass("top-nav-collapse");
-		}
+        if ($(".navbar").offset().top > 60) {
+            $(".fixed-top").addClass("top-nav-collapse");
+        } else {
+            $(".fixed-top").removeClass("top-nav-collapse");
+        }
     });
     
-	// jQuery for page scrolling feature - requires jQuery Easing plugin
-	$(function() {
-		$(document).on('click', 'a.page-scroll', function(event) {
-			var $anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 600, 'easeInOutExpo');
-			event.preventDefault();
-		});
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
+    $(function() {
+        $(document).on('click', 'a.page-scroll', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 600, 'easeInOutExpo');
+            event.preventDefault();
+        });
     });
 
     // offcanvas script from Bootstrap + added element to close menu on click in small viewport
-    $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle').on('click', function () {
+    $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle)').on('click', function () {
         $('.offcanvas-collapse').toggleClass('open')
     })
 
@@ -49,13 +46,12 @@
     /* Move Form Fields Label When User Types */
     // for input and textarea fields
     $("input, textarea").keyup(function(){
-		if ($(this).val() != '') {
-			$(this).addClass('notEmpty');
-		} else {
-			$(this).removeClass('notEmpty');
-		}
-	});
-	
+        if ($(this).val() != '') {
+            $(this).addClass('notEmpty');
+        } else {
+            $(this).removeClass('notEmpty');
+        }
+    });
 
     /* Back To Top Button */
     // create the back to top button
@@ -69,10 +65,9 @@
         }
     });
 
-
-	/* Removes Long Focus On Buttons */
-	$(".button, a, button").mouseup(function() {
-		$(this).blur();
-	});
+    /* Removes Long Focus On Buttons */
+    $(".button, a, button").mouseup(function() {
+        $(this).blur();
+    });
 
 })(jQuery);
