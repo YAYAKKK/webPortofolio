@@ -1,25 +1,27 @@
+/* Description: Custom JS file */
+
 (function($) {
     "use strict"; 
-
+	
     /* Navbar Scripts */
     // jQuery to collapse the navbar on scroll
     $(window).on('scroll load', function() {
-        if ($(".navbar").offset().top > 60) {
-            $(".fixed-top").addClass("top-nav-collapse");
-        } else {
-            $(".fixed-top").removeClass("top-nav-collapse");
-        }
+		if ($(".navbar").offset().top > 60) {
+			$(".fixed-top").addClass("top-nav-collapse");
+		} else {
+			$(".fixed-top").removeClass("top-nav-collapse");
+		}
     });
     
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $(function() {
-        $(document).on('click', 'a.page-scroll', function(event) {
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
-            }, 600, 'easeInOutExpo');
-            event.preventDefault();
-        });
+	// jQuery for page scrolling feature - requires jQuery Easing plugin
+	$(function() {
+		$(document).on('click', 'a.page-scroll', function(event) {
+			var $anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 600, 'easeInOutExpo');
+			event.preventDefault();
+		});
     });
 
     // offcanvas script from Bootstrap + added element to close menu on click in small viewport
@@ -46,12 +48,13 @@
     /* Move Form Fields Label When User Types */
     // for input and textarea fields
     $("input, textarea").keyup(function(){
-        if ($(this).val() != '') {
-            $(this).addClass('notEmpty');
-        } else {
-            $(this).removeClass('notEmpty');
-        }
-    });
+		if ($(this).val() != '') {
+			$(this).addClass('notEmpty');
+		} else {
+			$(this).removeClass('notEmpty');
+		}
+	});
+	
 
     /* Back To Top Button */
     // create the back to top button
@@ -65,9 +68,49 @@
         }
     });
 
-    /* Removes Long Focus On Buttons */
-    $(".button, a, button").mouseup(function() {
-        $(this).blur();
+
+	/* Removes Long Focus On Buttons */
+	$(".button, a, button").mouseup(function() {
+		$(this).blur();
+	});
+
+    /* Adjust iframe and div heights */
+    function adjustElementHeight(selector) {
+        var elements = document.querySelectorAll(selector);
+        
+        for (var i = 0; i < elements.length; i++) {
+            var element = elements[i];
+            var iframe = element.querySelector('object');
+            if (iframe) {
+                var src = iframe.getAttribute('data-src');
+                var message = {
+                    messageType: 'requestHeight'
+                };
+                iframe.contentWindow.postMessage(message, src);
+            }
+        }
+    }
+
+    window.addEventListener('message', function(event) {
+        if (event.origin === 'https://public.tableau.com') {
+            var message = event.data;
+            if (message.messageType === 'heightResponse') {
+                var iframe = document.querySelector('object[data-src="' + event.source.location.href + '"]');
+                if (iframe) {
+                    iframe.style.height = message.height + 'px';
+                }
+            }
+        }
+    });
+
+    window.onload = function() {
+        adjustElementHeight('.tableauPlaceholder');
+    };
+
+    /* Back button functionality */
+    $('a.back-to-top').on('click', function(event) {
+        event.preventDefault();
+        history.back();
     });
 
 })(jQuery);
