@@ -9,13 +9,13 @@
     <meta name="author" content="Your name">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
     <title>Brazilian Market Dashboard</title>
@@ -25,19 +25,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
+    <link href="css/styles.css" rel="stylesheet">
+    
+    <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
             
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html" style="text-decoration:dotted">ME</a>
+            <a class="navbar-brand logo-image" href="#" style="text-decoration:dotted"><span id="dynamic-text"></span></a>
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
@@ -51,30 +50,27 @@
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#services">Services</a>
-                    </li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item page-scroll" href="project.html">Highlight Project</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="terms.html">All project</a>
+                            <a class="dropdown-item page-scroll" href="allproject.html">All project</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
                         </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <span class="fa-stack">
-                    <a href="https://www.linkedin.com/in/yahya-arsyad-hasibuan-370a96171/">
+                    <a href="https://www.linkedin.com/in/yahyaarsyadhasibuan/">
                         <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-linkedin fa-stack-1x"></i>>
+                        <i class="fab fa-linkedin fa-stack-1x"></i>
                     </a>
                 </span>
                 <span class="fa-stack">
@@ -90,7 +86,7 @@
 
 
     <!-- Header -->
-    <header class="ex-header">
+    <header class="ex-headerBrazilian">
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
@@ -114,54 +110,47 @@
     </div> <!-- end of ex-basic-1 -->
     <!-- end of basic -->
 
-    <div class="container" style="margin: bottom 20px;;">
+    <div class="container" style="margin-bottom: 20px;">
         <div class="content" style="text-align: justify;">
-                <h1 class="title" style="text-align: left;">Exploring Business Potential in Brazilian E-commerce: A Comprehensive Data Review</h1>
+            <h1 class="title" style="text-align: left;">Exploring Business Potential in Brazilian E-commerce: A Comprehensive Data Review</h1>
 
-                <p>E-commerce has become a major driving force in global digital transformation, and Brazil is no exception. In an effort to gain a deeper understanding of the dynamics of the Brazilian e-commerce market, I conducted a comprehensive analysis of datasets covering various aspects of the business, ranging from customer behavior to payment trends, as well as the geographical distribution of sellers and customers. This article will delve into my findings and their strategic implications for e-commerce businesses.</p>
+            <p>E-commerce has become a major driving force in global digital transformation, and Brazil is no exception. In an effort to gain a deeper understanding of the dynamics of the Brazilian e-commerce market, I conducted a comprehensive analysis of datasets covering various aspects of the business, ranging from customer behavior to payment trends, as well as the geographical distribution of sellers and customers. This article will delve into my findings and their strategic implications for e-commerce businesses.</p>
 
-                <h3>Gathering and Evaluating Data</h3>
-                <p>The first step in this analysis was to gather and evaluate relevant datasets. I used Python libraries such as Pandas, NumPy, and Seaborn to manipulate and visualize the data. The datasets included information about customers, geographical locations, order items, payments, reviews, orders, products, sellers, and product categories.</p>
+            <h3>Gathering and Evaluating Data</h3>
+            <p>The first step in this analysis was to gather and evaluate relevant datasets. I used Python libraries such as Pandas, NumPy, and Seaborn to manipulate and visualize the data. The datasets included information about customers, geographical locations, order items, payments, reviews, orders, products, sellers, and product categories.</p>
 
-                <h4>Data Preprocessing</h4>
-                <p>Next, I handled missing values and performed data transformations to prepare it for further analysis. I interpolated missing values in date columns to maintain consistent time sequences. Additionally, I translated product categories without English translations to ensure consistency in analysis.</p>
+            <h4>Data Preprocessing</h4>
+            <p>Next, I handled missing values and performed data transformations to prepare it for further analysis. I interpolated missing values in date columns to maintain consistent time sequences. Additionally, I translated product categories without English translations to ensure consistency in analysis.</p>
 
-                <h4>Exploratory Data Analysis</h4>
-                <p>With the processed dataset, I explored the distribution of customers based on geographical locations to understand consumer demographics and preferences. I also analyzed seller distribution to gain insights into the geographical distribution of e-commerce businesses in Brazil. Data visualization techniques such as bar charts, histograms, and pie charts were used to illustrate findings clearly.</p>
+            <h4>Exploratory Data Analysis</h4>
+            <p>With the processed dataset, I explored the distribution of customers based on geographical locations to understand consumer demographics and preferences. I also analyzed seller distribution to gain insights into the geographical distribution of e-commerce businesses in Brazil. Data visualization techniques such as bar charts, histograms, and pie charts were used to illustrate findings clearly.</p>
 
-                <h4>In-depth Analysis</h4>
-                <p>Through dataset merging, I gained a deeper understanding of order processing times, shipping statuses, popular product categories, and payment trends. I analyzed dominant payment types and payment trends to understand consumer purchasing behavior. By examining purchase patterns over time, valuable trends and patterns for business strategies were identified.</p>
+            <h4>In-depth Analysis</h4>
+            <p>Through dataset merging, I gained a deeper understanding of order processing times, shipping statuses, popular product categories, and payment trends. I analyzed dominant payment types and payment trends to understand consumer purchasing behavior. By examining purchase patterns over time, valuable trends and patterns for business strategies were identified.</p>
 
-                <h4>Key Findings</h4>
-                <p>From the analysis, several key findings emerged. Sao Paulo, as a major e-commerce hub, stood out as a center for sales and purchases. Payment trends indicated a strong preference for credit cards, especially for installment payments. The geographical distribution of sellers and customers also provided valuable insights for business expansion strategies.</p>
+            <h4>Key Findings</h4>
+            <p>From the analysis, several key findings emerged. Sao Paulo, as a major e-commerce hub, stood out as a center for sales and purchases. Payment trends indicated a strong preference for credit cards, especially for installment payments. The geographical distribution of sellers and customers also provided valuable insights for business expansion strategies.</p>
 
-                <h4>Conclusion</h4>
-                <p>By leveraging in-depth data analysis, e-commerce businesses can identify growth opportunities, understand customer behavior, and enhance customer experiences. By knowing trends and patterns in purchases, payments, and geographical distribution, businesses can optimize their operations and make more informed decisions.</p>
+            <h4>Conclusion</h4>
+            <p>By leveraging in-depth data analysis, e-commerce businesses can identify growth opportunities, understand customer behavior, and enhance customer experiences. By knowing trends and patterns in purchases, payments, and geographical distribution, businesses can optimize their operations and make more informed decisions.</p>
 
-                <h3>Next Steps</h3>
-                <p>To enhance internal understanding and communication, I recommend building an interactive dashboard that visualizes insights gained from this data analysis. With this dashboard, management teams can easily track business performance, identify market trends, and make strategic decisions.</p>
+            <h3>Next Steps</h3>
+            <p>To enhance internal understanding and communication, I recommend building an interactive dashboard that visualizes insights gained from this data analysis. With this dashboard, management teams can easily track business performance, identify market trends, and make strategic decisions.</p>
 
-                <h3>Final Stage: Building a Dashboard for Insight Visualization</h3>
-                <p>To conclude, building an interactive dashboard for visualizing insights is crucial in gaining a competitive edge and making informed decisions in the dynamic and rapidly evolving landscape of Brazilian e-commerce.</p>
+            <h3>Final Stage: Building a Dashboard for Insight Visualization</h3>
+            <p>To conclude, building an interactive dashboard for visualizing insights is crucial in gaining a competitive edge and making informed decisions in the dynamic and rapidly evolving landscape of Brazilian e-commerce.</p>
         </div>
-        
+            
         <a class="btn-solid-reg mb-5" href="project.html">Back</a>
     </div>
-    </div>
 
 
-   <!-- Footer -->
+    <!-- Footer -->
     <div class="footer bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="social-container">
-                        <span class="fa-stack">
-                            <a href="mailto:arsyadhasibuan32@gmail.com">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-envelope fa-stack-1x"></i>
-                            </a>
-                        </span>
                         <span class="fa-stack">
                             <a href="https://x.com/_yayak_?s=09">
                                 <i class="fas fa-circle fa-stack-2x"></i>
@@ -171,7 +160,7 @@
                         <span class="fa-stack">
                             <a href="https://www.linkedin.com/in/yahya-arsyad-hasibuan-370a96171/">
                                 <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin fa-stack-1x"></i>>
+                                <i class="fab fa-linkedin fa-stack-1x"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
@@ -191,8 +180,6 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of footer -->  
-<!-- end of footer -->
-
 
     <!-- Copyright -->
     <div class="copyright bg-gray">
@@ -203,10 +190,8 @@
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    
-    	
+    </div> <!-- end of copyright -->
+
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->

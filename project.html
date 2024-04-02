@@ -9,39 +9,34 @@
     <meta name="author" content="Your name">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>YAHYA ARSYAD HASIBUAN</title>
+    <title>Hightlight Project</title>
     
     <!-- Styles -->
-    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
+    <link href="css/styles.css" rel="stylesheet">
+    
+    <!-- Favicon  -->
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
-            
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html" style="text-decoration:dotted">ME</a>
-
+            <a class="navbar-brand logo-image" href="#" style="text-decoration:dotted"><span id="dynamic-text"></span></a>
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
-
             <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -51,30 +46,26 @@
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#services">Services</a>
-                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item page-scroll" href="project.html">Highlight Project</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="terms.html">All project</a>
+                            <a class="dropdown-item page-scroll" href="allproject.html">All project</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
                         </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <span class="fa-stack">
-                    <a href="https://www.linkedin.com/in/yahya-arsyad-hasibuan-370a96171/">
+                    <a href="https://www.linkedin.com/in/yahyaarsyadhasibuan/">
                         <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-linkedin fa-stack-1x"></i>>
+                        <i class="fab fa-linkedin fa-stack-1x"></i>
                     </a>
                 </span>
                 <span class="fa-stack">
@@ -87,8 +78,9 @@
         </div> <!-- end of container -->
     </nav> <!-- end of navbar -->
     <!-- end of navigation -->
+    
     <!-- Header -->
-    <header class="ex-header">
+    <header class="ex-headerHighlight">
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
@@ -103,8 +95,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1">
-
-                    <img class="img-fluid mb-5" src="images/—Pngtree—visualizing financial data 3d computer_4786668.jpg" alt="Data Analytics">
                     <p>My portfolio includes detailed analyses and insights derived from complex datasets, demonstrating proficiency in statistical modeling, trend analysis, and data-driven decision making. Each project showcases a unique approach tailored to specific business objectives.</p>
                     <p class="mb-5">Utilizing interactive visualizations and concise summaries, I present actionable insights that drive strategic business decisions and enhance performance across various industries.</p>
 
@@ -190,34 +180,29 @@
                 </div>
             </div>
         </div>
-    </div> <!-- end of card 3 -->
+    </div> <!-- end of ex-cards-1 -->
 
- <!-- Delivered Projects -->
+    <!-- Delivered Projects -->
     <section id="projects" class="basic-3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h2 class="h2-heading">Projects Portfolio</h2>
-                    <p class="p-heading">
-                        Below are some of the most representative projects I've undertaken as a Data Analyst. These projects encompass a range of in-depth data analyses and insightful dashboard creations, providing valuable insights and strategic recommendations.</p>
+                    <p class="p-heading">Below are some of the most representative projects I've undertaken as a Data Analyst. These projects encompass a range of in-depth data analyses and insightful dashboard creations, providing valuable insights and strategic recommendations.</p>
                 </div> <!-- end of col -->
-             <!-- end of row -->
+            </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
-                    
                     <!-- Project 1 -->
                     <h2 class="h2-heading" >Brazilian Market Dashboard</h2>
-                    
                     <div class="image-container">
-                            <a href="project.html">
-                                <img class="img-fluid" src="images/brazilian.png" alt="Brazilian Dashboard">
-                            </a>
+                        <a href="project.html">
+                            <img class="img-fluid" src="images/brazilian.png" alt="Brazilian Dashboard">
+                        </a>
+                    </div> <!-- end of image-container -->
+                    <div class="text-container">
+                        <p>Explore insights into Brazil's sales market through my detailed dashboard analysis on Olist Market! Uncover deep understandings of customer distribution, product trends, and more key factors. Don't miss out on optimizing your marketing strategies and identifying compelling growth opportunities. Let's dive in together and elevate your business performance! <a class="blue" href="project-detail-brazil.html">details</a></p>
                     </div>
-                        <!-- end of image-container -->
-                            <div class="text-container">
-                                <p>Explore insights into Brazil's sales market through my detailed dashboard analysis on Olist Market! Uncover deep understandings of customer distribution, product trends, and more key factors. Don't miss out on optimizing your marketing strategies and identifying compelling growth opportunities. Let's dive in together and elevate your business performance! <a class="blue" href="project-detail-brazil.html">details</a></p>
-                            </div>
-                    
                     <!-- End of Project 1 -->
 
                     <!-- Project 2 -->
@@ -256,12 +241,11 @@
                     <!-- End of Project 4 -->
                     </div>
                 </div> <!-- end of col -->
-            </div>
-            <a class="btn-solid-reg mb-5" href="index.html">Back</a> <!-- end of row -->
-        </div>
-         <!-- end of container -->
+            </div> <!-- end of row -->
+            <a class="btn-solid-reg mb-5" href="index.html">Back</a>
+        </div> <!-- end of container -->
     </section> <!-- end of basic-3 -->
-<!-- end of Delivered Projects -->
+    <!-- end of Delivered Projects -->
 
     <!-- Footer -->
     <div class="footer bg-gray">
@@ -269,12 +253,6 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="social-container">
-                        <span class="fa-stack">
-                            <a href="mailto:arsyadhasibuan32@gmail.com">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-envelope fa-stack-1x"></i>
-                            </a>
-                        </span>
                         <span class="fa-stack">
                             <a href="https://x.com/_yayak_?s=09">
                                 <i class="fas fa-circle fa-stack-2x"></i>
@@ -284,7 +262,7 @@
                         <span class="fa-stack">
                             <a href="https://www.linkedin.com/in/yahya-arsyad-hasibuan-370a96171/">
                                 <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin fa-stack-1x"></i>>
+                                <i class="fab fa-linkedin fa-stack-1x"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
@@ -306,22 +284,22 @@
     </div> <!-- end of footer -->  
     <!-- end of footer -->
 
-<!-- Copyright -->
-<div class="copyright bg-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <p class="p-small">Copyright ©2024 <a class="no-line" href="#your-link">Yahya Arsyad</a></p>
-            </div> <!-- end of col -->
-        </div> <!-- enf of row -->
-    </div> <!-- end of container -->
-</div> <!-- end of copyright --> 
-<!-- end of copyright -->
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright ©2024 <a class="no-line" href="#your-link">Yahya Arsyad</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
     
-<!-- Scripts -->
-<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-<script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-<script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

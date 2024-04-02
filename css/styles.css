@@ -579,6 +579,10 @@ input[type='checkbox'] {
 .basic-1 .text-container {
 	margin-bottom: 3rem;
 }
+.basic-1 .text-container.second h2{
+	text-align: center;
+	margin-bottom: 2rem;
+}
 
 .basic-1 .time {
 	margin-bottom: 0.5rem;
@@ -634,10 +638,12 @@ input[type='checkbox'] {
 /*     Details     */
 /*******************/
 .split .area-1 {
-	height: 430px;
-	background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/choose.jpg') center center no-repeat;
-	background-size: cover;
+    background: linear-gradient(to bottom right, rgba(25, 26, 29, 0.5), rgba(25, 26, 29, 0.5)), url('../images/IMG-20220810-WA0036.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: calc(100vh - 7.75rem); 
 }
+
 
 .split .area-2 {
 	padding-top: 7.75rem;
@@ -651,7 +657,9 @@ input[type='checkbox'] {
 .split .icons-container {
 	margin-top: 1rem;
 }
-
+.split .text-container{
+	margin-top: 0px;
+}
 .split .icons-container img {
 	width: 30px;
 	margin-right: 0.625rem;
@@ -685,6 +693,11 @@ input[type='checkbox'] {
 .basic-3 .image-container {
 	margin-bottom: 1rem;
 }
+/* Styling untuk gambar */
+.carousel-item img {
+	width: 100%;
+	height: auto;
+}  
 
 /* Hover Animation */
 .basic-3 .image-container {
@@ -703,6 +716,9 @@ input[type='checkbox'] {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 } 
+.basic-3 .carousel-inner .carousel-item p{
+	color: white;
+}
 /* end of hover animation */
 
 
@@ -718,7 +734,9 @@ input[type='checkbox'] {
 	margin-bottom: 4rem;
 	text-align: justify;
 }
-
+.basic-4 .text-container a {
+	text-decoration: solid;
+}
 .basic-4 .image-container {
 	margin-bottom: 1rem;
 }
@@ -744,6 +762,11 @@ input[type='checkbox'] {
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
 } 
+.basic-4 h2{
+	text-align: center;
+	margin-bottom: 2%;
+}
+
 /* end of hover animation */
 
 
@@ -921,7 +944,7 @@ input[type='checkbox'] {
 /*     Copyright     */
 /*********************/
 .copyright {
-	padding-top: 1rem;
+	padding-top:3rem;
 	padding-bottom: 1rem;
 	background-color: #24262a;
 	text-align: center;
@@ -967,11 +990,63 @@ a:hover.back-to-top {
 	padding-bottom: 4rem;
 	background-color: #24262a;
 }
-
+.ex-headerMelbourne {
+	padding-top: 8.5rem;
+	padding-bottom: 4rem;
+	background:url('../images/melbourneback.jpg') center center no-repeat;
+	background-size: cover;
+}
+.ex-headerNetflix {
+	padding-top: 8.5rem;
+	padding-bottom: 4rem;
+	background:url('../images/netflixback.jpg') center center no-repeat;
+	background-size: cover;
+}
+.ex-headerBrazilian {
+	padding-top: 8.5rem;
+	padding-bottom: 4rem;
+	background:url('../images/brazilianback.jpg') center center no-repeat;
+	background-size: cover;
+}
+.ex-headerSdgs {
+	padding-top: 8.5rem;
+	padding-bottom: 4rem;
+	background:url('../images/sdgsbcack.png') center center no-repeat;
+	background-size: cover;
+}
+.ex-headerHighlight {
+	padding-top: 8.5rem;
+	padding-bottom: 4rem;
+	background:url('../images/—Pngtree—visualizing\ financial\ data\ 3d\ computer_4786668.jpg') center center no-repeat;
+	background-size: cover;
+}
+.ex-headerProject {
+	padding-top: 8.5rem;
+	padding-bottom: 4rem;
+	background:url('../images/allproject.jpg') center center no-repeat;
+	background-size: cover;
+}
 .ex-header h1 {
 	color: #ffffff;
 }
-
+.ex-headerNetflix h1 {
+	color: #ffffff;
+}
+.ex-headerMelbourne h1 {
+	color: rgb(255, 255, 255);
+}
+.ex-headerBrazilian h1 {
+	color: #ffd700;
+}
+.ex-headerSdgs h1 {
+	color: black;
+}
+.ex-headerHighlight h1 {
+	color: #ffffff;
+}
+.ex-headerProject h1 {
+	color: #ffffff;
+}
 .ex-basic-1 .list-unstyled .fas {
 	font-size: 0.375rem;
 	line-height: 1.625rem;
@@ -1284,6 +1359,7 @@ a:hover.back-to-top {
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
+
 
 	.basic-1 .text-container.third {
 		margin-left: 2rem;
