@@ -762,10 +762,15 @@ input[type='checkbox'] {
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
 } 
-.basic-4 h2{
+.basic-4 h1{
 	text-align: center;
 	margin-top : 7%;
-	margin-bottom: 5%;
+	margin-bottom: 3%;
+}
+.basic-4 h3{
+	text-align: center;
+	margin-top : 5%;
+	margin-bottom: 3%;
 }
 
 /* end of hover animation */
