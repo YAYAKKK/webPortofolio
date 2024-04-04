@@ -655,7 +655,7 @@ input[type='checkbox'] {
 }
 
 .split .icons-container {
-	margin-top: 1rem;
+	margin-top: 0rem;
 }
 .split .text-container{
 	margin-top: 0px;
@@ -764,7 +764,8 @@ input[type='checkbox'] {
 } 
 .basic-4 h2{
 	text-align: center;
-	margin-bottom: 2%;
+	margin-top : 7%;
+	margin-bottom: 5%;
 }
 
 /* end of hover animation */
