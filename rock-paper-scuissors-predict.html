@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your description">
+    <meta name="author" content="Your name">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>Rock-Paper-Scissors</title>
+    
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="#" style="text-decoration:dotted"><span id="dynamic-text"></span></a>
+
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Mark</a> -->
+
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Project</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item page-scroll" href="project.html">Highlight Project</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item page-scroll" href="allproject.html">All project</a>
+                            <div class="dropdown-divider"></div>
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <span class="fa-stack">
+                    <a href="https://www.linkedin.com/in/yahyaarsyadhasibuan/">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-linkedin fa-stack-1x"></i>>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://www.instagram.com/yarepeat/">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </a>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header class="ex-headerrockpaperSciccors">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Image Classification Model for Rock-Paper-Scissors</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <p style="text-align: center;"><i>Photo source : Illustration of rock-paper-scissors (Shutterstock)</i> </p>
+    <!-- end of header -->
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+    <div class="container" style="margin-bottom: 20px;">
+        <div class="content" style="text-align: left;">
+            <!-- Title -->
+            <h2 class="title" style="text-align: left;">Building an Image Classification Model for Rock-Paper-Scissors Using Deep Learning</h2>
+
+            <!-- Introduction -->
+            <h3 style="margin-top: 2rem;">Introduction</h3>
+            <p>
+                In today's rapidly evolving digital era, machine learning technology has become one of the most crucial fields in data processing. One fascinating application of machine learning is image classification, where models are programmed to recognize and categorize images based on their content. In this article, we will explore the complex process of building and evaluating an image classification model using deep learning methods. Specifically, we will focus on developing a model capable of accurately distinguishing between hand gestures depicting rock, paper, and scissors. Through a carefully crafted series of steps, we will discuss everything from importing data to model evaluation, providing deep insights into the workings of modern machine learning techniques.
+                Building an image classification model is the first step towards more advanced applications such as object detection, facial recognition, and even autonomous vehicles. With the ability to understand and interpret the visual world like humans, image classification models can be used in various industries, including security surveillance, pattern recognition, medical diagnostics, and much more.
+            </p>
+
+            <!-- Dataset Collection -->
+            <h3>Dataset Collection</h3>
+            <p>
+                The dataset used in this project comes from the <strong><em><a href="https://www.dicoding.com/" style="text-decoration: none; color: blue; font-weight: bold; font-style: italic;">Dicoding class</a></em></strong>. Dicoding provides diverse and high-quality datasets to support learning in programming and technology fields. The rockpaperscissors dataset used in this article consists of images depicting hand gestures of rock, paper, and scissors. Using this dataset provides advantages in data consistency and quality, which are crucial in training accurate and reliable machine learning models.
+            </p>
+            <!-- 1. Import Library -->
+            <h3>1. Import Library</h3>
+            <pre class="fullcode"><code >
+            import tensorflow as tf
+            from tensorflow.keras.preprocessing.image import ImageDataGenerator
+            from tensorflow.keras.models import Sequential
+            from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+            from tensorflow.keras.optimizers import RMSprop
+            from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
+            import matplotlib.pyplot as plt
+            import zipfile
+            import os
+            from sklearn.metrics import classification_report, confusion_matrix
+            from keras.preprocessing import image
+            from datetime import datetime, timedelta
+            from tensorflow.keras.callbacks import EarlyStopping
+            </code></pre>
+
+                <!-- 1. Import TensorFlow -->
+                <h5>Import TensorFlow</h5>
+                <pre><code>import <code>tensorflow</code> as <code>tf</code></code></pre>
+
+                <p>The first step in the machine learning model development process is to import the <code>TensorFlow</code> library. <code>TensorFlow</code> is a powerful open-source machine learning framework developed by Google. It provides a comprehensive ecosystem of tools, libraries, and community resources for building and deploying machine learning models.</p>
+                
+                <!-- 2. Import ImageDataGenerator -->
+                <h5>Import ImageDataGenerator</h5>
+                <pre><code>from <code>tensorflow.keras.preprocessing.image</code> import <code>ImageDataGenerator</code></code></pre>
+
+                <p>The <code>ImageDataGenerator</code> class from <code>TensorFlow</code> <code>Keras</code> API is used for data augmentation and preprocessing of images during model training. Data augmentation techniques such as rotation, scaling, and flipping can help improve the robustness and generalization of the trained model.</p>
+                
+                <!-- 3. Import Sequential Model -->
+                <h5>Import Sequential Model</h5>
+                <pre><code>from <code>tensorflow.keras.models</code> import <code>Sequential</code></code></pre>
+                <p>The <code>Sequential</code> model from <code>TensorFlow</code>'s <code>Keras</code> API is a linear stack of layers. It allows for easy and intuitive building of deep learning models by simply adding layers in sequence.</p>
+                
+                <!-- 4. Import Layers -->
+                <h5>Import Layers</h5>
+                <pre><code>from <code>tensorflow.keras.layers</code> import <code>Conv2D, MaxPooling2D, Flatten, Dense</code></code></pre>
+                <p>Various layer types such as convolutional, pooling, flattening, and dense (fully connected) layers are essential components of neural network architectures. These layers are imported from <code>TensorFlow</code>'s <code>Keras</code> API for building the model.</p>
+                
+                <!-- 5. Import Optimizers -->
+                <h5>Import Optimizers</h5>
+                <pre><code>from <code>tensorflow.keras.optimizers</code> import <code>RMSprop</code></code></pre>
+                <p>Optimizers are algorithms used to update the weights of the neural network during training in order to minimize the loss function. <code>RMSprop</code> is one of the optimization algorithms available in <code>TensorFlow</code>, suitable for training deep neural networks.</p>
+                
+                <!-- 6. Import Callbacks -->
+                <h5>Import Callbacks</h5>
+                <pre><code>from <code>tensorflow.keras.callbacks</code> import <code>EarlyStopping, ModelCheckpoint</code></code></pre>
+                <p>Callbacks are objects that can perform actions at various stages of the training process, such as stopping training early if no improvement is observed or saving the model's weights after every epoch. Here, we import <code>EarlyStopping</code> and <code>ModelCheckpoint</code> callbacks for monitoring and managing the training process.</p>
+                
+                <!-- 7. Import Visualization Tools -->
+                <h5>Import Visualization Tools</h5>
+                <pre><code>import <code>matplotlib.pyplot</code> as <code>plt</code></code></pre>
+                <p><code>Matplotlib</code> is a popular data visualization library in Python. We import it here to visualize training and evaluation metrics such as loss and accuracy.</p>
+                
+                <!-- 8. Import Zipfile Module -->
+                <h5>Import Zipfile Module</h5>
+                <pre><code>import <code>zipfile</code></code></pre>
+                <p>The <code>zipfile</code> module in Python provides tools for creating, reading, writing, and extracting ZIP archives. It is used here to handle the extraction of dataset files.</p>
+                
+                <!-- 9. Import Operating System Module -->
+                <h5>Import Operating System Module</h5>
+                <pre><code>import <code>os</code></code></pre>
+                <p>The <code>os</code> module in Python provides functions for interacting with the operating system, such as reading or writing files, manipulating paths, and managing directories. It is used here for specifying file paths during dataset extraction.</p>
+                
+                <!-- 10. Import Classification Metrics -->
+                <h5>Import Classification Metrics</h5>
+                <pre><code>from <code>sklearn.metrics</code> import <code>classification_report, confusion_matrix</code></code></pre>
+                <p>Classification metrics such as precision, recall, and F1-score are important for evaluating the performance of classification models. We import <code>classification_report</code> and <code>confusion_matrix</code> from scikit-learn for computing these metrics.</p>
+                
+                <!-- 11. Import Image Preprocessing -->
+                <h5>Import Image Preprocessing</h5>
+                <pre><code>from <code>keras.preprocessing</code> import <code>image</code></code></pre>
+                <p>The <code>image</code> module from <code>Keras</code> provides utilities for loading, preprocessing, and augmenting image data. It is used here for image preprocessing tasks such as loading images from files.</p>
+                
+                <!-- 12. Import Date and Time Module -->
+                <h5>Import Date and Time Module</h5>
+                <pre><code>from <code>datetime</code> import <code>datetime, timedelta</code></code></pre>
+                <p>The <code>datetime</code> module in Python provides classes for manipulating dates and times. It is used here for time-related calculations or operations.</p>
+                
+                <!-- 13. Import EarlyStopping Callback -->
+                <h5>Import EarlyStopping Callback</h5>
+                <pre><code>from <code>tensorflow.keras.callbacks</code> import <code>EarlyStopping</code></code></pre>
+                <p>The <code>EarlyStopping</code> callback in <code>TensorFlow</code> is used to stop training when a monitored metric has stopped improving. It helps prevent overfitting by terminating training early when performance on the validation set begins to degrade.</p>
+    
+
+            <h3>2. Dataset Collection</h3>
+            <pre class="fullcode"><code>
+            !wget https://github.com/dicodingacademy/assets/releases/download/release/rockpaperscissors.zip
+
+            with zipfile.ZipFile("rockpaperscissors.zip", "r") as zip_ref:
+                zip_ref.extractall("/content/")
+
+            dataset_dir = "/content/rockpaperscissors/rps-cv-images/"
+            </code></pre>
+            <p>
+            Next, the dataset needs to be collected to train and test the model. The dataset used in this project is the rockpaperscissors dataset provided by Dicoding. This stage includes downloading the dataset from its source and extracting the ZIP file to the correct directory.
+            </p>
+            <p>
+            Here are explanations for each step in the dataset collection stage:
+            <ol>
+                <li><strong>Download the Dataset:</strong> First, we use the <code>wget</code> command to download the <code>rockpaperscissors.zip</code> dataset file from its source. This link directs to the GitHub repository containing the dataset. Downloading the dataset is an important initial step before we can use the data to train and test the model.</li>
+                <li><strong>Extract the Dataset:</strong> After the dataset file is successfully downloaded, the next step is to extract it. In this code, we use the <code>zipfile</code> module to extract the ZIP file. The <code>extractall()</code> function is used to extract all contents of the ZIP file to the specified directory. In this case, the contents of <code>rockpaperscissors.zip</code> will be extracted to the <code>/content/</code> directory.</li>
+                <li><strong>Dataset Directory:</strong> After the dataset is extracted, we define the directory location where the dataset is stored. In this case, the dataset directory is stored in <code>/content/rockpaperscissors/rps-cv-images/</code>. This step is important because we will use this location to access the dataset when splitting it into training and validation data, as well as when training the model.</li>
+            </ol>
+            This stage is the initial step required in the dataset collection process to train the model. By downloading and extracting the dataset, we are ready to proceed to the next steps in building the image classification model.
+            </p>
+        
+
+
+            <h3>3. Dataset Splitting</h3>
+
+            <pre><code>
+            train_dir = os.path.join(dataset_dir, 'train')
+            val_dir = os.path.join(dataset_dir, 'val')
+
+            os.makedirs(train_dir, exist_ok=True)
+            os.makedirs(val_dir, exist_ok=True)
+
+            for label in ['rock', 'paper', 'scissors']:
+                os.makedirs(os.path.join(train_dir, label), exist_ok=True)
+                os.makedirs(os.path.join(val_dir, label), exist_ok=True)
+            </code></pre>
+
+            <p>Firstly, this code creates two new directories: one for the training data (<code>'train_dir'</code>) and one for the validation data (<code>'val_dir'</code>). These directories will be used to store the images used in the training and validation processes of the model. The <code>os.makedirs()</code> function is used to create directories, with the parameter <code>exist_ok=True</code> to avoid errors if the directory already exists. The <code>os.path.join()</code> function is used to combine the <code>dataset_dir</code> (main dataset directory) with the desired sub-directory names.</p>
+
+            <pre><code>
+            datagen = ImageDataGenerator(
+                rescale=1./255,
+                rotation_range=20,
+                horizontal_flip=True,
+                shear_range=0.2,
+                zoom_range=0.2,
+                validation_split=0.4
+            )
+            </code></pre>
+
+            <p>This code uses the <code>ImageDataGenerator</code> from the Keras module to prepare the training and validation data by performing image augmentation such as rotation, horizontal flipping, shear, and zoom. The parameter <code>validation_split=0.4</code> indicates that 40% of the entire data will be allocated as validation data.</p>
+
+            <pre><code>
+            train_generator = datagen.flow_from_directory(
+                dataset_dir,
+                target_size=(150, 150),
+                batch_size=32,
+                class_mode='categorical',
+                subset='training',
+                classes=['rock', 'paper', 'scissors']
+            )
+
+            val_generator = datagen.flow_from_directory(
+                dataset_dir,
+                target_size=(150, 150),
+                batch_size=32,
+                class_mode='categorical',
+                subset='validation',
+                classes=['rock', 'paper', 'scissors']
+            )
+            </code></pre>
+
+            <p>Two data generators (<code>train_generator</code> and <code>val_generator</code>) are created using <code>flow_from_directory()</code> from <code>ImageDataGenerator</code>. This generates iterators that automatically read images from the training and validation directories, as well as perform specified preprocessing such as resizing images to (150, 150) and converting class labels to one-hot encoded format (in 'categorical' mode). The <code>subset</code> parameter is used to specify whether the iterator will be used for training or validation data. The <code>classes</code> parameter specifies the class labels used in the dataset.</p>
+
+            <p>This stage involves splitting the dataset into two parts: training data (train) and validation data (val). The training data is used to train the model, while the validation data is used to test the performance of the model on unseen data. This process uses <code>ImageDataGenerator</code> to perform image augmentation and split the dataset into training and validation parts.</p>
+
+            <p>Here are detailed explanations for each step in this stage:
+                <ol>
+                    <li><strong>Creating Directories:</strong> Firstly, we create two directories named train and val to store training and validation data, respectively. These directories will store images for training and testing the model.</li>
+                    <li><strong>Creating Directory Structure:</strong> Inside the train and val directories, we create subdirectories for each class label (rock, paper, and scissors). This directory structure organizes images based on their class labels, which is necessary for <code>ImageDataGenerator</code> to process the data.</li>
+                    <li><strong>Splitting Dataset:</strong> Next, we use <code>ImageDataGenerator</code> to split the dataset into training and validation sets. We specify parameters such as rescaling, rotation range, horizontal flip, shear range, zoom range, and validation split to perform data augmentation and divide the dataset. 60% of the dataset is allocated for training, while 40% is allocated for validation.</li>
+                    <li><strong>Using Image Data Generator:</strong> Lastly, we use the <code>flow_from_directory</code> method from <code>ImageDataGenerator</code> to generate batches of augmented data images from the specified directories. We specify parameters such as target size, batch size, class mode, subset (training or validation), and class labels to configure the generator as needed.</li>
+                </ol>
+                This stage is crucial in preparing the dataset for model training. By splitting the dataset into training and validation sets and performing data augmentation, we ensure that the model is trained on diverse and representative data, resulting in better performance and generalization.
+            </p>
+
+
+
+            <!-- Model Sequential -->
+            <h3>4. Model Sequential</h3>
+            <ul>
+                <li>
+                    <strong>Creation of Sequential Model:</strong>
+                    <p>The first step is to create a sequential model using <code> TensorFlow </code>and <code> Keras</code>. This model consists of several types of layers, starting with convolutional layers <code> (Conv2D)</code> that extract features from the input images.</p>
+                    <pre><code>
+            model = Sequential([
+                Conv2D(32, (3, 3), activation='relu', input_shape=(150, 150, 3)),
+                MaxPooling2D(2, 2),
+                Conv2D(64, (3, 3), activation='relu'),
+                MaxPooling2D(2, 2),
+                Conv2D(128, (3, 3), activation='relu'),
+                MaxPooling2D(2, 2),
+                Flatten(),
+                Dense(512, activation='relu'),
+                Dense(3, activation='softmax')
+            ])
+                    </code></pre>
+                </li>
+                <li>
+                    <strong>Model Compilation:</strong>
+                    <p>After creating the model, the next step is to compile it by specifying the optimizer, loss function, and evaluation metrics.</p>
+                    <pre><code>
+            model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+                    </code></pre>
+                </li>
+            </ul>
+            <p>
+                At this stage, a sequential model is created using TensorFlow and Keras. This model consists of several types of layers, starting with convolutional layers (Conv2D) that extract features from the input images.
+
+                <ol>
+                    <li><strong>Convolutional Layers (Conv2D):</strong> Convolutional layers are used to extract features from the input images. In this example, we use 3x3 filters with 32 units, and ReLU activation function.</li>
+                    <li><strong>Pooling Layers (MaxPooling2D):</strong> After each convolutional layer, pooling layers are used to reduce the spatial dimensions of the generated features. This helps reduce the computational complexity of the model.</li>
+                    <li><strong>Flatten Layer:</strong> This layer converts the two-dimensional feature matrix into a one-dimensional array to be used as input for dense layers (Dense).</li>
+                    <li><strong>Dense Layers (Dense):</strong> Dense layers aim to perform classification based on the features extracted by the previous convolutional layers. In this example, we have two dense layers with 512 units each and 3 units. The activation functions used are ReLU for the first layer and softmax for the last layer.</li>
+                </ol>
+
+                Once the model architecture definition is complete, the model needs to be compiled before training. In this compilation stage, the optimizer, loss function, and metrics to evaluate the model's performance during training are specified. This stage is crucial in determining the neural network model architecture and preparing it for training.
+            </p>
+
+            
+
+            <!-- Model Training -->
+            <h3>5. Model Training</h3>
+            <p>In this phase, the model undergoes training utilizing the dataset previously prepared. The training process encompasses several key steps, including defining <code>early_stopping</code> criteria to prevent overfitting, recording the start time to measure training duration accurately, conducting model training with a predefined number of <code>epochs=10</code>, monitoring validation accuracy throughout training to ensure model performance, and terminating training when the specified accuracy threshold is met or exceeded. Upon completion of training, the <code>elapsed_time</code> is computed to provide insights into the duration of the training process.</p>
+            
+            <pre class="fullcode"><code>
+            <code>early_stopping</code> = EarlyStopping(monitor='val_accuracy', patience=5, mode='max', verbose=1)
+            
+            <code>start_time</code> = datetime.now()
+            
+            history = model.fit(
+                <code>train_generator</code>,
+                <code>epochs=10</code>,
+                validation_data=<code>val_generator</code>,
+                callbacks=[<code>early_stopping</code>],
+                verbose=1
+            )
+            
+            for epoch, acc in enumerate(history.history['val_accuracy']):
+                print(f'Epoch {epoch + 1}/{len(history.history["val_accuracy"])} - Val Accuracy: {acc:.4f}')
+            
+                if acc >= 0.98:
+                    print(f"Accuracy reaches 98%. Training stopped.")
+                    break
+            
+            <code>end_time</code> = datetime.now()
+            <code>elapsed_time</code> = <code>end_time</code> - <code>start_time</code>
+            <code>elapsed_minutes</code> = <code>elapsed_time</code>.total_seconds() / 60
+            print(f"Training Completed. Time Taken: {<code>elapsed_minutes</code>:.2f} minutes")
+            </code></pre>
+            
+            <pre><code>
+            <code>early_stopping</code> = EarlyStopping(monitor='val_accuracy', patience=5, mode='max', verbose=1)
+            </code></pre>
+            <p>The <code>EarlyStopping</code> callback is used to stop training if there is no improvement in the model's performance after a certain number of epochs. The parameter monitor='val_accuracy' indicates that we want to monitor the validation accuracy, patience=5 indicates the number of epochs to wait before stopping training if no improvement is observed, mode='max' indicates that we want to search for maximum improvement in the monitored metric, and verbose=1 sets the display of informational messages.</p>
+            
+            <pre><code>
+            <code>start_time</code> = datetime.now()
+            </code></pre>
+            <p>This code records the start time of training to calculate the total time required for model training.</p>
+            
+            <pre><code>
+            history = model.fit(
+                <code>train_generator</code>,
+                <code>epochs=10</code>,
+                validation_data=<code>val_generator</code>,
+                callbacks=[<code>early_stopping</code>],
+                verbose=1
+            )
+            </code></pre>
+            <p>This code trains the model by calling the fit() method on the model object. The training data is provided through <code>train_generator</code>, validation data through <code>val_generator</code>. The number of training epochs is set to <code>10</code>. EarlyStopping callback is added to stop training if the specified criteria are not met.</p>
+            
+            <pre><code>
+            for epoch, acc in enumerate(history.history['val_accuracy']):
+                print(f'Epoch {epoch + 1}/{len(history.history["val_accuracy"])} - Val Accuracy: {acc:.4f}')
+                
+                if acc >= 0.98:
+                    print(f"Accuracy reaches 98%. Training stopped.")
+                    break
+            </code></pre>
+            <p>This code iterates through the validation accuracy values for each epoch stored in the history object. If the accuracy reaches or exceeds 98%, training is stopped.</p>
+            
+            <pre><code>
+            <code>end_time</code> = datetime.now()
+            <code>elapsed_time</code> = <code>end_time</code> - <code>start_time</code>
+            <code>elapsed_minutes</code> = <code>elapsed_time</code>.total_seconds() / 60 
+            print(f"Training Completed. Time Taken: {<code>elapsed_minutes</code>:.2f} minutes")
+            </code></pre>
+            <p>This code calculates the time taken for model training, from start to finish. The result is printed in minutes.</p>
+            
+            <p>In this stage, the model is trained using previously partitioned data. The training process is carried out by calling the fit() method of the model object. The EarlyStopping callback is used to stop training if there is no improvement in the model's performance after a certain number of epochs. After training is completed, the model's performance is evaluated and the time taken for training is printed.</p>
+            
+
+
+
+            <h3>6. Evaluation and Training Graphs</h3>
+
+            <pre><code>
+            score = model.evaluate(<code>val_generator</code>, verbose=0)
+            print(f"Model Accuracy: {score[1]*100:.2f}%")
+            </code></pre>
+            <p>In this step, the model is evaluated using validation data. The <code>evaluate()</code> function is used to calculate the model's accuracy on the validation data. The accuracy score is then printed to provide an overview of the overall performance of the model.</p>
+            
+            <pre><code>
+            plt.figure(figsize=(12, 4))
+            
+            plt.subplot(1, 2, 1)
+            plt.plot(history.history['accuracy'], label='Training Accuracy')
+            plt.plot(history.history['val_accuracy'], label='Validation Accuracy')
+            plt.title('Training and Validation Accuracy')
+            plt.xlabel('Epochs')
+            plt.ylabel('Accuracy')
+            plt.legend()
+            
+            plt.subplot(1, 2, 2)
+            plt.plot(history.history['loss'], label='Training Loss')
+            plt.plot(history.history['val_loss'], label='Validation Loss')
+            plt.title('Training and Validation Loss')
+            plt.xlabel('Epochs')
+            plt.ylabel('Loss')
+            plt.legend()
+            
+            plt.tight_layout()
+            plt.show()
+            </code></pre>
+            
+            <p>Next, visualization of graphs is performed to understand the model's performance during training. Two graphs are displayed: the accuracy graph and the loss graph for both the training and validation sets. This helps to understand how the model's performance evolves over the number of epochs (iterations) during the training process. These graphs provide a visual understanding of how the model learns from the data.</p>
+            
+            <pre><code>
+            Model Accuracy: 94.74%
+            </code></pre>
+            
+            <p>Finally, the accuracy of the model on the validation data is printed to provide information about how well the model can predict unseen data. This accuracy score gives an indication of how well the model can generalize patterns from the training data to new data.</p>
+            
+            <p>
+            After training the model, its performance is evaluated using validation data. The model accuracy on validation data is then printed to provide an overview of the overall performance. Additionally, graphs of accuracy and loss on both training and validation sets are displayed to aid visual understanding of the model's performance, resulting in the following:
+            </p>
+            <p><img src="images/Screenshot 2024-04-04 221216.png" style="width: 100%;" alt=""></p>
+            
+
+
+            <h3>7. Proof of Work Results</h3>
+
+            <pre><code>
+                def predict_image(file_path):
+                img = image.load_img(file_path, target_size=(150, 150))
+                img_array = image.img_to_array(img)
+                img_array = np.expand_dims(img_array, axis=0)  # Create batch axis
+                predictions = model.predict(img_array)
+                predicted_class_index = np.argmax(predictions)
+                class_labels = <code>train_generator</code>.class_indices
+                predicted_class = list(class_labels.keys())[predicted_class_index]
+                return predicted_class, predictions</code></pre>
+            
+            <p>This function <code>predict_image()</code> is defined to predict the class and probability distribution of an image given its file path. It first loads the image using <code>image.load_img()</code> from the file path and resizes it to the required dimensions (150x150 pixels). Then, it converts the image into an array using <code>image.img_to_array()</code>. To make predictions, the array is expanded to add a batch dimension using <code>np.expand_dims()</code> since the model expects input in batches. The model's <code>predict()</code> method is then used to obtain predictions. The predicted class index is determined using <code>np.argmax()</code> on the predictions array, and then converted back to class label using the class indices obtained from the <code>train_generator</code>.</p>
+            
+            <pre><code>
+            uploaded = files.upload()
+            
+            for fn in uploaded.keys():
+                predicted_class, predictions = <code>predict_image(fn)</code>
+            
+                img = mpimg.imread(fn)
+                imgplot = plt.imshow(img)
+                plt.show()
+            
+                print(f"File: {fn}")
+                print(f"Predicted Class: {predicted_class}")
+                print(f"Predictions: {predictions}")
+            </code></pre>
+            
+            <p>In this loop, each uploaded image is iterated through. For each image, the <code>predict_image()</code> function is called to obtain the predicted class and prediction probabilities. The image is then read using <code>mpimg.imread()</code> and displayed using <code>plt.imshow()</code> for visual inspection. Finally, the file name, predicted class, and prediction probabilities are printed to provide insight into the model's predictions.</p>
+            
+            <p>Generally, a function that takes the image path as input and returns the predicted class and probability distribution from the trained model. The image is converted into an array, expanded by adding a batch dimension, then predicted using the model. The prediction results are then converted back into class labels.</p>
+            
+            <pre><code>
+            uploaded = files.upload()
+            </code></pre>
+            
+            <p>This code allows users to upload images for prediction. Below is an example of the uploaded image and its result: <br> <p><img src="images/Screenshot 2024-04-04 212148.png" style="width: 50%;" alt=""></p> </p>
+            
+            <p>
+            The final step involves proving the results of the model's work by predicting uploaded images. The uploaded images are also displayed for easier visual understanding. This process involves using a function to predict images, displaying the uploaded images, and displaying the prediction results from the model.
+            </p>
+            
+            <h3>Conclusion</h3>
+            <p>
+            In this article, we have learned the steps involved in developing an image classification model using deep learning techniques. By following these steps, we can create and evaluate a model capable of classifying images of hands depicting rock, paper, and scissors with satisfactory accuracy. Hopefully, this article is helpful in understanding the concepts and implementation of machine learning models. Thank you.
+            </p>
+            
+            <p>To view a more detailed analysis, please refer to my complete analysis on <strong><em><a href="https://www.kaggle.com/code/yayakk/rock-paper-scissors-predictions" style="text-decoration: none; color: blue; font-weight: bold; font-style: italic;">Kaggle</a></em></strong>.</p>
+            
+            <a class="btn-solid-reg mb-5" href="project.html">Back</a>
+        </div>
+    </div>
+    </div>
+    
+    
+
+
+    <!-- Footer -->
+    <div class="footer bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="social-container">
+
+                        <span class="fa-stack">
+                            <a href="https://www.kaggle.com/yayakk">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-kaggle fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.linkedin.com/in/yahyaarsyadhasibuan">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x"></i>>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/yarepeat/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://github.com/YAYAKKK">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of social-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright ©2024 <a class="no-line" href="#your-link">Yahya Arsyad</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
